@@ -11,7 +11,7 @@ Sin embargo, esta idea no es nueva. Tiene mucho en comun con el concepto de Sist
 Jackson consultor en Thoughtworks da la primera definición de microfront en el año 2016
 ```
 An architectural style where independently deliverable frontend applications are composed into a greater whole
-(Jackson,2017)
+(Jackson,2016)
 ```
 
 ## Beneficios
