@@ -49,7 +49,7 @@ module.exports = {
         mf_cards: "mf_cards@http://localhost:8083/remoteEntry.js",
         mf_detalle_personaje:
           "mf_detalle_personaje@http://localhost:8084/remoteEntry.js",
-          mf_detalle_planet:
+        mf_detalle_planet:
           "mf_detalle_planet@http://localhost:8085/remoteEntry.js",
       },
       exposes: {},

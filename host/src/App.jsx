@@ -10,6 +10,7 @@ import NotFound from "./pages/NotFound";
 import "./index.scss";
 
 import Loader from "./components/Loader";
+import { Error } from "./components/Error";
 
 const HomePage = lazy(() => import("./pages/HomePage"));
 const AboutPage = lazy(() => import("./pages/AboutPage"));
@@ -26,45 +27,55 @@ const App = () => (
         <Route
           path="/"
           element={
-            <Suspense fallback={<Loader />}>
-              <HomePage />
-            </Suspense>
+            <Error>
+              <Suspense fallback={<Loader />}>
+                <HomePage />
+              </Suspense>
+            </Error>
           }
         />
 
         <Route
           path="/personajes"
           element={
-            <Suspense fallback={<Loader />}>
-              <PersonajesPage />
-            </Suspense>
+            <Error>
+              <Suspense fallback={<Loader />}>
+                <PersonajesPage />
+              </Suspense>
+            </Error>
           }
         />
 
         <Route
           path="/personajes/:name"
           element={
-            <Suspense fallback={<Loader />}>
-              <DetallePersonajePage />
-            </Suspense>
+            <Error>
+              <Suspense fallback={<Loader />}>
+                <DetallePersonajePage />
+              </Suspense>
+            </Error>
           }
         />
 
         <Route
           path="/planet/:name"
           element={
-            <Suspense fallback={<Loader />}>
-              <DetallePlanetPage />
-            </Suspense>
+            <Error>
+              <Suspense fallback={<Loader />}>
+                <DetallePlanetPage />
+              </Suspense>
+            </Error>
           }
         />
 
         <Route
           path="/about"
           element={
-            <Suspense fallback={<Loader />}>
-              <AboutPage />
-            </Suspense>
+            <Error>
+              <Suspense fallback={<Loader />}>
+                <AboutPage />
+              </Suspense>
+            </Error>
           }
         />
 
